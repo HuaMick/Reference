@@ -25,9 +25,6 @@ launch.json needs to "connect": {"host": "localhost","port": 5678}
 import debugpy
 debugpy.listen(("localhost", 5678))
 
-**GCP**
-*$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\mickh\OneDrive\01_Developer\00_GCP\Keys\nosql-353404-237f3bacb26d.json"
-
 **Streamlit**
 *Run App* : streamlit run ExampleApp1.py  
 
@@ -40,22 +37,6 @@ debugpy.listen(("localhost", 5678))
 *Initalize Repository* : git init
 git config --global user.name "FIRST_NAME LAST_NAME"e
 git config --global user.email "MY_NAME@example.com"
-
-**WSL Ubuntu**
-Username: huamick
-Password: 1LoveCode+
-
-**NSWTransportAPI**
-Username: HuaMick
-Email: hua.mick@gmail.com
-Password: 1LoveAPIs+
-
-AppName: App20220610
-API Key (Client ID): rG3uaQgSxI8LbkMvtwS9fp61tZdQmxDOcqNj
-api.transport.nsw.gov.au
-Base URL: https://api.transport.nsw.gov.au/v1/
-Public Transport - Realtime - Alerts - v2: https://api.transport.nsw.gov.au/v2/gtfs/alerts
-HTTPS server on port 443.
 
 **Pandas**
 pd.DataFrame({
