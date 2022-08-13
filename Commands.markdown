@@ -61,3 +61,7 @@ df.groupby(
         Count=pd.NamedAgg(
         column='RequestType', aggfunc="count"))
 
+**Jupyter**
+pip install ipykernel
+ipython kernel install --user --name=20220802
+
