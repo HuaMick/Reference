@@ -38,7 +38,7 @@ git config --global user.email "MY_NAME@example.com"
 
 git clone https://bitbucket.org/user/sourcerepo.git
 
-git remote set-url origin http://github.com/user/YourRepo 
+git remote set-url origin http://github.com/HuaMick/20220813_LouderTask
 
 
 **Show Remote URL** : 
