@@ -22,29 +22,6 @@ https://opendata.transport.nsw.gov.au/dataset/historical-traffic-api/resource/76
 
 *Generate Requirements File* : pip freeze > requirements.txt 
 
-### Git
-
----
-
-**Initalize Repository** : 
-
-git init
-
-git config --global user.name "FIRST_NAME LAST_NAME"e
-
-git config --global user.email "MY_NAME@example.com"
-
-**Clone Repository**
-
-git clone https://bitbucket.org/user/sourcerepo.git
-
-git remote set-url origin http://github.com/HuaMick/20220813_LouderTask
-
-
-**Show Remote URL** : 
-
-git remote -v
-
 ### Python Run Commands
 
 ---
@@ -59,4 +36,3 @@ c:/Users/mickh/OneDrive/01_Developer/02_Python/20220613/model.py
 pip install ipykernel
 ipython kernel install --user --name=20220802
 
-asdsad
