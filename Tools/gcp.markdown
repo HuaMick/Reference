@@ -1,5 +1,11 @@
 ## Google Cloud Platform
 
+### Container Management
+
+**Google Container Registry**
+
+**Google Artifact Registry**
+
 ### Data Ingestion and Collection
 ---
 **Cloud Pub/Sub** : Data Ingestion for Stream and Messaging {Asynchronous, 

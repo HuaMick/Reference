@@ -16,9 +16,14 @@ https://opendata.transport.nsw.gov.au/dataset/historical-traffic-api/resource/76
 
 ---
 
-*New Environement* : python -m venv .venv
+*New Environement* : 
+windows: python -m venv .venv
+linux: python3 -m venv .venv
 
-*Activate Environment* : .venv\Scripts\activate.ps1
+*Activate Environment* : 
+windows: .venv\Scripts\activate.ps1
+linux: source .venv\bin\activate
+
 
 *Generate Requirements File* : pip freeze > requirements.txt 
 
