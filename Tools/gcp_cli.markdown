@@ -2,7 +2,10 @@
 
 initalise: gcloud init
 
-Log in to account: gcloud auth login
+## Authentication / Logging In 
+
+**Standard Login Using Oauth** : gcloud auth login
+**Login for Applications Using Oauth** : gcloud auth application-default login
 Log out of all accounts: gcloud auth revoke --all
 
 

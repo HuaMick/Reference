@@ -112,3 +112,7 @@ Big Query API
 **global window** : stream processing aggregation window that is from -infinity to +infinity
 
 **side input** : separate dataset used to enrich streaming data 
+
+**data exfiltration** : internal employee strealing company data
+
+**virtual private cloud (VPC)** : a separation of internal gcp networks for secuirty (acts like its own network) 
