@@ -1,0 +1,1 @@
+**Store Output of Command In Variable** : my_variable=$(ls)

@@ -8,6 +8,8 @@ initalise: gcloud init
 **Login for Applications Using Oauth** : gcloud auth application-default login
 Log out of all accounts: gcloud auth revoke --all
 
+**Impersonate Service Account** : gcloud config set auth/impersonate_service_account {service account}
+
 
 docker build -f Dockerfile -t gcr.io/bigquery-362207/dockerdash:1 .
 
