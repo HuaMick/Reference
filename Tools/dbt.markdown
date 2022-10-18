@@ -3,8 +3,7 @@
 dbt init
 dbt run
 
-dbt run-operation snapshot
-dbt run-operation get_tables --args '{"project_id":"louder-billing", "dataset_name":"dev_reporting"}'
+**run macro:** dbt run-operation {macro name}
 
 **DBT Profiles**
 Description : This is a connection configuration
