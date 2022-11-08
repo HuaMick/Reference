@@ -1,0 +1,1 @@
+**DirectRunner:** executes pipelines on your machine and is designed to validate that pipelines adhere to the Apache Beam model as closely as possible.

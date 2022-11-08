@@ -1,0 +1,1 @@
+scheduled maintenance is not considered a failover event by GCP.

@@ -1,3 +1,10 @@
+Large scale aggregated SQL queries are best run on BigQuery
+
+## Export Data To Cloud Storage
+
+**Natively Export:** Avro, JSON, Parquet
+**BQ Transfer Service:** export to Google SaaS applications (AdWords, DoubleClick, etc.)
+
 **Federated Datasource** : An external data source that can be queried directly even though the data is not stored in BigQuery.
 **Authorised View** : authorized view allows you to share query results with particular users and groups without giving them access to the underlying tables.
 

@@ -1,5 +1,13 @@
 
+**Preemptible Worker Nodes**: 
+- Only function as processing nodes
+- Can be added after the cluster is created
+- Can be reclaimed at any time
+- You must have at lease 1 standard worker node
+
 **Auto-Scaling** : Not recommended for: HDFS, YARN Node Labels, park Structured Streaming, Idle Clusters
+
+**Integrates with** : BigQuery, Cloud Storage, Cloud Bigtable, Stackdriver Logging, and Stackdriver Monitoring.
 
 gsutil cp gs://cloud-training/preppde/benchmark.py gs://qwiklabs-gcp-01-882578ab3d23/
 

@@ -1,0 +1,2 @@
+
+You must set Owner credentials to use the enable cache option in BigQuery. It is also a Google best practice to use the enable cache option when the business scenario calls for using prefetch caching.Cache auto-expires after 12 hours. 24-hour cache is not a valid option. Prefetch cache is only for data sources that use the Owner's credentials (not the Viewer's credentials).
