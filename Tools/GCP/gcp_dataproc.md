@@ -4,8 +4,14 @@
 - Can be added after the cluster is created
 - Can be reclaimed at any time
 - You must have at lease 1 standard worker node
+- SSD is not available on preemtible worker nodes!
 
-**Auto-Scaling** : Not recommended for: HDFS, YARN Node Labels, park Structured Streaming, Idle Clusters
+
+**Auto-Scaling** : Not recommended for: 
+HDFS : Hardoop Special On Prem Storage System
+YARN Node Labels : Grouping Nodes with similar characteristics together
+park Structured Streaming
+Idle Clusters
 
 **Integrates with** : BigQuery, Cloud Storage, Cloud Bigtable, Stackdriver Logging, and Stackdriver Monitoring.
 

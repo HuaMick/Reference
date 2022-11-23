@@ -24,3 +24,8 @@
 
 **ToDo**: I need basic knowledge of the SQL Key Words
 
+
+**Input data Errors** :  Use a try-catch block is correct. output to Pub/Sub, not GCS.
+*Not sure why we out put to pub/syb ^*
+
+**DirectRunner** : Apache Beam tool that allows you to run your pipline locally

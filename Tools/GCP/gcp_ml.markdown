@@ -1,6 +1,8 @@
 ## Google Cloud Platform Machine Learning Reference
 
 
+**Cloud TPU** is the custom-designed machine learning ASIC that powers Google products like Translate, Photos, Search, Assistant, and Gmail.
+
 ### AI Platform
 
 **BASIC:** lowest cost. 
@@ -43,15 +45,16 @@ Available via Google Natural Language API
 
 
 ### Supervised Learning
-Uses Labelled Datasets
+Uses labelled datasets where AI will make a prediction
 
 **Classification**
 
 **Regression**
 
 ### Unsupervised Learning
+Unlabelled datasets where AI uses pattern recognition
 
-**Clustering**
+Clustering : Grouping similar data together
 
 **Association**
 
@@ -71,3 +74,7 @@ Unified AI Platform for GCP
 
 
  **Data -> Feature Engineering -> Model Architecture**
+
+**Hyper Parameters**
+Epoch : The number of passes a training dataset takes around an algorithm
+

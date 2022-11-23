@@ -1,0 +1,1 @@
+You can recreate instances directly from a boot-disk snapshot

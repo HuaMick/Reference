@@ -1,3 +1,6 @@
+Pubsub can be used for catching error messages
+
+
 **Max Payload Size**: 10mb
 **Min Retention Duration**: 10 minutes
 **Default Retention Duration**: 7 Days

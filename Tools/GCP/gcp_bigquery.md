@@ -1,4 +1,5 @@
 Large scale aggregated SQL queries are best run on BigQuery
+BigQuery is not designed to support strongly consistent transactions.
 
 ## Export Data To Cloud Storage
 

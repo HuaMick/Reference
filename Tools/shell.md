@@ -11,3 +11,5 @@ gcloud iam service-accounts set-iam-policy SERVICE_ACCOUNT POLICY_FILE [GCLOUD_W
 **Run Prev Commands** : !{index}
 
 **Clear Line** : Ctrl + U
+
+**>** : pipe output to filepath 
