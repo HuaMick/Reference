@@ -1,3 +1,10 @@
+Cloud Logging only stores data for 30 days. 
+	- For storage, send logs to cloud storage.
+	- For storage and analytics, send logs to bigquery
+
+
+
+
 
 **Big Query Data Transfer Service**
 *All logs with config in ... with json payload msg using regex match string starting with "Summary:"

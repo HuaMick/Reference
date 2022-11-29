@@ -39,7 +39,7 @@ git remote set-url origin http://github.com/HuaMick/20220813_LouderTask
 **Merge Remote with Local**
 ```
 #add remote repository address
-git remote {add/set-url} origin http://github.com/HuaMick/...
+git remote {add/set-url} origin git@bitbucket.org:louder/airflow.git
 #pull the remote content, allow unrelated history
 git pull origin main --allow-unrelated-histories
 ```

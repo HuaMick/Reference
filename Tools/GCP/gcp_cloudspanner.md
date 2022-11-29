@@ -1,3 +1,4 @@
+**Cloud Spanner** : RDB Fully managed the scales globally. Best if you need multiple databases that scale. Supports atomicity consistency isolation durability (ACID) which is great for globally synced transactions.
 
 **External Consistency** : Guarentees transactions are executed sequentially even across regions
 
