@@ -1,12 +1,13 @@
 **Cloud Memory Store** : NoSQL Data Store For Applications that require caching
 
 Highly available Managed Redis or Memcached service
-
-**memcach**
-  High availability Key value store
+  - originally based on redis
 
 **redis**
-  More flexibile then memcache on data types
+In memory data store
+  - more flexibile then memcache but also more complex
+  - single threaded : grows horizontally
+  - can support persistance 
 
 Used for caching data:
   - databases
@@ -26,3 +27,24 @@ Data Types:
   - Stream: acts like an append-only log 
   - HyperLogLog: probabilistic estimates of cardinality 
   (trades perfect accuracy for efficient space utilization)
+
+**Memcache**
+In memory key-value pair data store used for application caching and sharing data across application instances
+  - multi-threaded
+  - not persistant : loses all data if crashes
+  - does not support sets or sorted sets 
+  - shared service
+  - not transactional : does not wait for other transactions to complete
+  - applications should be able to function without memcache
+  
+Batch Commands:
+  - getAll()
+  - putAll()
+  - deleteAll()
+
+Atomic Operations:
+  - incrementAll()
+  - getIdentifiable()
+  - outIfUntouched()
+
+

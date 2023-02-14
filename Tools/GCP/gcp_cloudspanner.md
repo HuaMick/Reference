@@ -1,4 +1,24 @@
-**Cloud Spanner** : RDB Fully managed the scales globally. Best if you need multiple databases that scale. Supports atomicity consistency isolation durability (ACID) which is great for globally synced transactions.
+### Cloud Spanner
+RDB Fully managed the scales globally. Best if you need multiple databases that scale. Supports atomicity consistency isolation durability (ACID) which is great for globally synced transactions.
+
+  - Not as good for low latency writes as bigtable
+  - Will sacrifice availability for consistency if needed
+
+**key design**
+  - do not use a key that is monotonic (always increases or always decreases)
+  - recommend to use version 4 UUID or a universally unique identifier
+  - increase nodes when >75% CPU is utilized
+
+**architecture**
+  Bigquery vs Spanner:
+    - Spanner supports distributed transactions
+    - Spanner databases are defined by strongly typed schemas
+    - Native SQL Query and Read API
+    - Spanner throughput not as good as bigtable 
+    - Cost more than BigTable
+
+
+
 
 **External Consistency** : Guarentees transactions are executed sequentially even across regions
 

@@ -1,1 +1,0 @@
-Datastore is perfect for semi-structured data less than 1TB in size. 

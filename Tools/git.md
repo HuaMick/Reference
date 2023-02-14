@@ -63,6 +63,8 @@ git branch --delete branch-name
 git push -u origin --delete branch-name
 ```
 
+**Move Or Rename Folders**
+git mv <source> <destination>
 
 **Diagnostics** :   
 ```

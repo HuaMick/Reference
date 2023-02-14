@@ -1,3 +1,22 @@
+**Google Interconnect**
+Dedicated link to google cloud
+  - Dedicated Interconnect : Dedicated connection to google for > 10Gbps
+  - Partner Interconnect : Connection via service provider for < 10Gbps or where dedicated is not available
+
+**Apache vs GCP**
+Apache Hive <-> Bigquery
+Hbase <-> Bigtable
+Spark / Hadoop <-> Dataproc
+
+
+**Resource Hierarchy**
+Organization > Folders > Projects > Resources
+
+
+
+
+
+
 **Cloud Pub/Sub** : Data Ingestion for Stream and Messaging {Asynchronous, 
 Stores data for 7 days}
 
@@ -22,3 +41,22 @@ Best practise:
   - Configure and test downstream processes
   - Migrate analytical workloads first
   - prioritize least-risky usecases
+
+Data Transfer Appliance: 
+  - On Prem
+  - For large data use rehydration to encrypt and decrypt data
+  - Takes more than one week to upload the data over the network.
+
+gsutil:
+  - Use for < 1TB of data
+
+Storage Transfer Service
+  - Use for > 1 TB of data
+  - Cloud to Cloud
+  - Bucket to bucket
+
+
+**Pig** : Pig is scripting language which can be used for checkpointing and splitting pipelines
+
+**To Review**
+Bigquery Transfer Service vs Storage Transfer Service

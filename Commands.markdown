@@ -1,4 +1,6 @@
 
+gcloud config set auth/impersonate_service_account louder-dbt-services@louder-billing.iam.gserviceaccount.com
+
 ### Things to do
 
 ___

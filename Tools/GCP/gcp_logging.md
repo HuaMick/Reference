@@ -1,10 +1,20 @@
+### Cloud Logging
+
 Cloud Logging only stores data for 30 days. 
 	- For storage, send logs to cloud storage.
 	- For storage and analytics, send logs to bigquery
 
+**Stackdriver**
+
+  - fluentd : The cloud logging agent for GKE uses this open source framework
+
+Creating Custom Metrics
+  - Open Census : Recommended for creating your own custom metrics on stackdriver
+  - Prometheus : Open source framework for creating custom logging metrics
 
 
 
+**Prometheus** :
 
 **Big Query Data Transfer Service**
 *All logs with config in ... with json payload msg using regex match string starting with "Summary:"
