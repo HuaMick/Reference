@@ -1,7 +1,7 @@
 ### Git
 
 ---
-**Configure Git** 
+**Configure Git**
 
 ```
 #Setup git to use vs code as the editor
@@ -12,7 +12,7 @@ git config --global user.email "MY_NAME@example.com"
 
 ```
 
-**Initalize Repository**  
+**Initalize Repository**
 *Make sure you have setup .gitignore else better to add files individually*
 
 ```
@@ -20,7 +20,7 @@ git config --global user.email "MY_NAME@example.com"
 git init
 #Add all files in folder to be tracked by git
 git add .
-#Commit the files 
+#Commit the files
 git commit --all
 #add remote repository address
 git remote {add/set-url} origin http://github.com/HuaMick/...
@@ -48,12 +48,15 @@ git pull origin main --allow-unrelated-histories
 ```
 #Reset to main
 git checkout main
-git fetch origin 
+git fetch origin
 git reset --hard origin/main
 #Create a New Branch
-git checkout -b new-feature
-git push -u origin new-feature
+git checkout -b feature/<new feature>
+git push -u origin feature/<new feature>
 ```
+
+**Pull Remote Branch to Local**
+git switch <Remote branch>
 
 **Delete Branch**
 ```
@@ -66,7 +69,10 @@ git push -u origin --delete branch-name
 **Move Or Rename Folders**
 git mv <source> <destination>
 
-**Diagnostics** :   
+**Remove files from pull request**
+git checkout origin/main -- <filepath>
+
+**Diagnostics** :
 ```
 #show file status (shortform)
 git status -s
@@ -77,7 +83,8 @@ git branch -a
 
 ```
 
-**Notes** 
+**Notes**
 ```
 #Origin is the default alias given to a local repo
 ```
+
