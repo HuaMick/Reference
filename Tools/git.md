@@ -66,11 +66,21 @@ git branch --delete branch-name
 git push -u origin --delete branch-name
 ```
 
-**Move Or Rename Folders**
+**Move Or Rename Files or Folders**
 git mv <source> <destination>
 
-**Remove files from pull request**
-git checkout origin/main -- <filepath>
+**Reset File**
+Reset File to latest branch: git checkout -- <filepath>
+Reset File to main:  git checkout origin/main -- <filepath>
+
+Discard unstaged changes: git restore <file>
+
+**Get File**
+From another branch: git checkout <branch> -- <filepath>
+
+**Remove File**
+Delete file: git rm <filepath>
+
 
 **Diagnostics** :
 ```
@@ -88,3 +98,5 @@ git branch -a
 #Origin is the default alias given to a local repo
 ```
 
+**Commit**
+Combine with previous: git commit --amend

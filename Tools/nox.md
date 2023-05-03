@@ -1,1 +1,1 @@
-nox -s lintsql    
+nox -s lintsql
