@@ -1,7 +1,3 @@
-
-
-pip install apache-airflow-providers-google
-
 1. pip install -r requirements.txt
 2. edit the airflow.cfg found in: /Users/mickhua/airflow
 3. update the following configurations:

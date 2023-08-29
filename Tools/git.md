@@ -55,19 +55,31 @@ git checkout -b feature/<new feature>
 git push -u origin feature/<new feature>
 ```
 
-**Pull Remote Branch to Local**
-git switch <Remote branch>
+**Git Worktree**
+git worktree add ../worktree/feature/LOAU-62-Airflow-DAG-revenue feature/LOAU-62-Airflow-DAG-revenue
 
-**Delete Branch**
-```
-#delete local
-git branch --delete branch-name
-#delete remote
-git push -u origin --delete branch-name
-```
+**Pull / Get / Copy**
+Pull branch from remote: `git switch <Remote branch>`
 
-**Move Or Rename Files or Folders**
+Copy file from another branch: `git checkout <branch> -- <filepath>`
+
+
+**Delete**
+Delete branch
+    - local: `git branch --delete <branch-name>`
+    - remote: `git push -u origin --delete <branch-name>`
+    - local matching pattern: `git branch | grep "<pattern>" | xargs git branch -D`
+
+
+
+**Move / Rename**
 git mv <source> <destination>
+
+Rename branch
+    - local: `git branch -m <old-name> <new-name>`
+    - remote:
+        1. Delete old remote: `git push origin --delete <old-name>`
+        2. Add remote with new name: `git push origin -u <new-name>`
 
 **Reset File**
 Reset File to latest branch: git checkout -- <filepath>
@@ -75,8 +87,7 @@ Reset File to main:  git checkout origin/main -- <filepath>
 
 Discard unstaged changes: git restore <file>
 
-**Get File**
-From another branch: git checkout <branch> -- <filepath>
+
 
 **Remove File**
 Delete file: git rm <filepath>
