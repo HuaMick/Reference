@@ -1,0 +1,3 @@
+Column-oriented: Unlike CSV files that store data row by row, Parquet stores data by column. This makes it faster to read specific columns needed for analysis, instead of the entire file.
+Efficient compression: Parquet compresses data well, reducing storage space and speeding up data transfer.
+Open-source and popular: Parquet is an open-source format compatible with many data processing tools, making it a popular choice for big data workflows.
