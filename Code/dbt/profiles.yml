@@ -1,0 +1,16 @@
+settings:
+  type: bigquery
+  method: service-account
+  project: gcp_project_id
+  threads: 8
+  keyfile: "{{ env_var('KEY_PATH') }}"
+  timeout_seconds: 300
+  location: australia-southeast1
+
+
+project_name:
+  target: dev
+  outputs:
+    dev:
+      dataset: dev
+      <<: settings

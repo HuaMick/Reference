@@ -1,0 +1,18 @@
+version: 2
+sources:
+  - name: source_name
+    database: "{{ env_var('GCP_PROJECT') }}"
+    schema: bq_schema
+    tables:
+      - name: table_name
+        description: >
+          display and video advertiser data thats been extracted from the dv360 api
+      - name: insertion_orders
+        description: >
+          display and video insertion order data thats been extracted from the dv360 api
+      - name: insertion_order_revenue
+        description: >
+          display and video insertion order revenue data thats been extracted from the dv360 api
+      - name: insertion_order_revenue_daily
+        description: >
+          display and video insertion order revenue daily data thats been extracted from the dv360 api

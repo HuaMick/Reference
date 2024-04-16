@@ -1,0 +1,19 @@
+version: 2
+
+name: &name name
+email: &email email
+
+exposures:
+  - name: name
+    label: label
+    type: application
+    maturity: low
+    description: >
+      Source table for ....
+
+    depends_on:
+      - ref('model_name')
+
+    owner:
+      name: *name
+      email: *email

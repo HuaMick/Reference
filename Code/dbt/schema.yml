@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: model_name
+    description: >
+      description of model
+    config:
+      tags:
+        - tag_name
+    columns:
+      - name: field_name
+        tests:
+          - not_null
+          - unique
+          - relationships:
+              to: ref("model_name")
+              field: insertion_order_id
+          - accepted_values:
+              values: [
+                "v1",
+                "v2",
+                "v3",
+                ]
+      - name: boolean_field_name
+        tests:
+          - accepted_values:
+              values: [true, false]
+              quote: false
