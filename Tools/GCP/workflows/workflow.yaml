@@ -1,0 +1,23 @@
+main:
+  steps:
+    - init:
+        assign:
+          - variable: ${sys.get_env("ENVIRONMENT_VARIABLE")}
+    - step1_cloud_run_job:
+        call: googleapis.run.v1.namespaces.jobs.run
+        args:
+          name: ${"namespaces/" + project_id + "/jobs/dv360-partners-dev"}
+          location: ${job_location}
+        result: project_result
+    - step2_bigquery:
+        call: googleapis.bigquery.v2.jobs.query
+        args:
+          projectId: ${project_id}
+          body:
+            useLegacySql: false
+            query:
+                'select *
+                 from `schema.table`;'
+        result: queryResult
+    - step3_return_result:
+        return: ${queryResult}
