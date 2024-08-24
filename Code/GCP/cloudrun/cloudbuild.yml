@@ -7,7 +7,7 @@ steps:
         "--file","Dockerfile",
         "--build-arg","ENV_1=${_ENV_1}",
         "--build-arg","ENV_2=${_ENV_2}",
-        "--tag","$_LOCATION-docker.pkg.dev/$_PROJECT/louder-projects/$_NAME",
+        "--tag","$_LOCATION-docker.pkg.dev/$_PROJECT/projects/$_NAME",
         ".",
       ]
-images: [$_LOCATION-docker.pkg.dev/$_ART_PROJECT/louder-projects/$_NAME]
+images: [$_LOCATION-docker.pkg.dev/$_ART_PROJECT/projects/$_NAME]
