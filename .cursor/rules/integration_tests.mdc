@@ -1,0 +1,61 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Integration Tests
+Integration tests check that multiple functions work together to produce the expected result.
+
+Integration tests should:
+- Always use `python -m pytest` when running tests to ensure proper module resolution
+- Structure imports in test files using full paths from the project root (e.g., `from src.functions.module import function`)
+- Decouple test implementation from test execution by using shell scripts for environment setup
+- Have a pytest file in `./tests/test_integration_<test_name>.py`
+- Have a shell script in `./tests/test_integration_<test_name>.sh` that sets up the environment and executes the test
+- Not use any mocking and test real world assets
+- Output to stdout something that demonstrates real world confidence in test results
+- Use proper pytest assertions rather than return values for validation
+- Structure imports using full paths from the project root (e.g., `from src.functions.module import function`)
+
+### Shell Script Template
+
+```bash
+#!/bin/bash
+
+# Activate the virtual environment
+source .venv/bin/activate
+
+# Apply environment variables
+source env/env.env
+
+# Run the test with -s flag to show print statements and -v for verbose output
+python -m pytest tests/test_integration_<test_name>.py::test_function -v -s
+
+# Deactivate virtual environment if it was activated
+if [ -n "$VIRTUAL_ENV" ]; then
+    deactivate
+fi
+```
+
+### Example Test File Structure
+
+```python
+from src.functions.module import function
+
+def test_service_operation():
+    # Initialize client
+    client_result = get_client()
+    assert client_result["success"], f"Failed to initialize client: {client_result['message']}"
+    
+    # Execute test operation
+    result = perform_operation(client_result["result"])
+    
+    # Print results for verification
+    print("\nIntegration Test Results:")
+    print(f"Results: {result}")
+    
+    # Assertions to verify the results
+    assert result["success"] == True, "Operation failed"
+    assert len(result["result"]) > 0, "Expected non-empty results"
+```
+

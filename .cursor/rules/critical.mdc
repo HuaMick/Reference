@@ -1,0 +1,35 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## Agentic Development
+
+Agentic development is a collaborative, iterative approach to software development that leverages AI agents to work alongside human developers.
+
+Key principals are:
+- small, focused changes with comprehensive testing
+- minimalistic mvp design and implementation
+- slow and delibrate thinking before code generation
+- maintainable, high quality code
+
+## AWAYS ON START Checklist
+This checklist should always be followed commencing any thinking.
+- [ ] Verify the Project Folder Structure @ ./memory_bank/design.md.
+- [ ] Review working notes @ ./memory_bank/notes.md.
+- [ ] Review context specific checklists and pick the most relevant one. 
+- [ ] `grep_search` for relevant folders and files and check the readme file for rules or notes on which context specific checklists should apply.
+- [ ] unless explicily instructed to always using dev / staging (stg) assets and environments.
+- [ ] check with the user explicitly before making any updates that could impact production assets.
+
+### Context Specific - Testing Checklist
+- [ ] Run `grep_search` for existing test shell scripts.
+- [ ] Run `grep_search` for existing pytest files and fixtures.
+- [ ] Before creating new tests be extreemly minimalistic check both unit tests and integration tests and ensure the tests add unique value and don't duplicate.
+
+### Context Specific - Debugging Checklist
+- [ ] Check if a solution has already been tried before trying it again.
+
+### Context Specific - Code Changes Checklist
+- [ ] Run `grep_search` for affected test shell scripts.
+- [ ] Execute all relevant test shell scripts.

@@ -1,0 +1,32 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Below is the current folder structure of the project:
+- Always check before doing anything lese if the folder structure is up to date.
+
+```
+.
+├── src/
+│   ├── functions/    # Cloud functions and business logic
+│   └── tests/        # Test files
+│       ├── unit_tests/
+│       └── integration_tests/
+│
+├── scripts/          # Test and utility scripts
+│
+├── env/              # Environment variables
+│
+├── .venv/            # Virtual environment
+│
+├── memory_bank/      # Project documentation and design
+│   └── design.md     # This design document
+│
+├── requirements.txt  # Project dependencies
+│
+└── pyproject.toml    # Project configuration
+``` 
+
+- Never create new folders, ask the human dev to do this instead
+- Always `grep_search` for existing files before creating new ones
