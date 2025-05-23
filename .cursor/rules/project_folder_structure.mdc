@@ -4,29 +4,44 @@ globs:
 alwaysApply: true
 ---
 Below is the current folder structure of the project:
-- Always check before doing anything lese if the folder structure is up to date.
+
+### Project Folder Structure
+
+Below is the current folder structure of the project:
 
 ```
 .
 ├── src/
 │   ├── functions/    # Cloud functions and business logic
-│   └── tests/        # Test files
-│       ├── unit_tests/
-│       └── integration_tests/
+│   ├── config/       # Configuration files
+│   └── nodes/        # Node components
 │
-├── scripts/          # Test and utility scripts
+├── tests/            # Test files
+│   ├── fixtures/     # Test fixtures and shared test data
+│   ├── scripts/      # Test helper scripts
+│   └── test_integration_*.py     # Integration test implementation files
+    └── test_integration_*.sh     # Integration test shell script for setting env and .venv
+│
+├── agent_memory/     # Project documentation and reference materials
+│   ├── lessons.md    # Lessons learned
+│   └── notes.md      # Project notes
+│
+├── secrets/          # Credentials and secret files
 │
 ├── env/              # Environment variables
 │
 ├── .venv/            # Virtual environment
 │
-├── memory_bank/      # Project documentation and design
-│   └── design.md     # This design document
+├── infastructure/    # Infrastructure configuration
+│
+├── legacy/           # Legacy code and resources
 │
 ├── requirements.txt  # Project dependencies
 │
-└── pyproject.toml    # Project configuration
-``` 
+├── pyproject.toml    # Project configuration
+│
+└── .gitignore        # Git ignore file
+```
 
 - Never create new folders, ask the human dev to do this instead
 - Always `grep_search` for existing files before creating new ones
